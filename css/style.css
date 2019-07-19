@@ -520,8 +520,8 @@
         .about {
             width: 100%;
             height: 240px;
-            /* flex-direction: column;
-            align-items: center; */
+            flex-direction: column;
+            align-items: center;
             background: url(../images/long-hair.jpg) 50% 25% no-repeat;
             background-size: cover;
             position: relative;
@@ -542,27 +542,30 @@
         }
 
         .table_1 {
-            position: absolute;
+            /* position: absolute;
             left: 27%;
-            top: 5%;
+            top: 5%; */
             z-index: 10;
             color: #fff;
         }
 
         .about_btn {
-            position: absolute;
+            /* position: absolute;
             left: 24%;
-            top: 60%;
+            top: 60%; */
             z-index: 10;
             
         }
-
+        .about_span {
+            flex-direction: column;
+        }
         .about_btn .bottom4 {
-            position: absolute;
+            /* position: absolute;
             left: 20%;
-            top: 74.5%;
+            top: 74.5%; */
             border-top: 3px solid #fff;
             width: 35px;
+            margin: -1.7rem 0 0 7.3rem;
         }
 
         .table_1 td {
@@ -763,33 +766,7 @@
             .category .bottom2 {
                 margin: -28px 0 50px 0;
             }
-            .table_1 {
-                position: absolute;
-                left: 24%;
-                top: 5%;
-                z-index: 10;
-                color: #fff;
-            }
-    
-            .about_btn {
-                position: absolute;
-                left: 22%;
-                top: 60%;
-                z-index: 10;
-                
-            }
-            /* .content_image {
-                width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-            .content .image_1 {
-                width: 30%;
-                margin: 0 1.5rem;
-                position: relative;
-                display: flex;
-
-            } */
+            
         }
         @media only screen and (max-width: 990px)and (min-width: 750px) {
             .wrap {

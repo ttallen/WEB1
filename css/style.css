@@ -460,22 +460,30 @@
             width: 700px;
             flex-direction: column;
             justify-content: center;
-            position: relative;
+            align-items: flex-start;
+            /* position: relative; */
 
+        }
+        .app .app_h2 {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0.8rem;
         }
 
         .app h2 {
             font-family: "微軟正黑體", Arial, Helvetica;
             font-size: 34px;
             font-weight: 500;
+            margin-bottom: 0;
         }
 
         .app .bottom3 {
-            position: absolute;
+            /* position: absolute;
             top: 40%;
-            left: 14.5%;
+            left: 14.5%; */
             border-top: 3px solid #000;
             width: 35px;
+            
         }
 
         .app ul {
@@ -603,6 +611,7 @@
 
         .about_btn ul {
             margin-left: -26px;
+            
         }
 
         .about_btn li {
@@ -631,7 +640,7 @@
             color: #000;
             display: block;
             background: #bdbbb4;
-            padding: 10px 40px;
+            padding: 10px 42px;
             border-radius: 5%;
             font-family: "微軟正黑體", Arial, Helvetica;
             box-shadow: 0 1px 2px rgb(128, 126, 126);
@@ -1067,11 +1076,21 @@
                 top: 96%;
                 left: 85%;
             }
-            /* .content_image {
-                width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-            } */
+        
+            .app .app_h2 {
+                margin-bottom: 0;
+            }
+            .app ul {
+                margin: 0;
+                flex-direction: column;
+            }
+            .app .ios {
+                margin: 0 0 -2.5rem 0;
+            }
+
+            .app p {
+                display: none;
+            }
             .about {
                 width: 100%;
                 min-height: 500px;
@@ -1120,6 +1139,9 @@
             .about_btn {
                 flex-direction: column;
                 align-items: center;
+            }
+            .about_btn ul {
+                margin-left: -38px;
             }
             
             .home {

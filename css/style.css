@@ -414,7 +414,7 @@
         .photo_1 p {
             position: absolute;
             top: 40%;
-            left: 15%;
+            left: 11%;
             color: #fff;
             text-align: center;
             font-family: "微軟正黑體", Arial, Helvetica;
@@ -548,6 +548,9 @@
             z-index: 10;
             color: #fff;
         }
+        .table_2 {
+            display: none;
+        }
 
         .about_btn {
             /* position: absolute;
@@ -581,7 +584,6 @@
             font-size: 56pt;
             padding-bottom: 5px;
             font-family: 'Old Standard TT', serif;
-
         }
 
         .table_1 .nbr {
@@ -774,68 +776,6 @@
                 width: 100%;
             }
             
-            /* 分隔 */
-            .nav_1 .menu_0 {
-                display: none;
-            }
-
-            .nav_2 .menu_1 {
-                display: block;
-            }
-
-            .nav_2 .menu {
-                /*隱藏選單開始*/
-                max-height: 0;
-                overflow: hidden;
-                /*隱藏選單結束*/
-                transition: max-height 0.5s;
-                position: absolute;
-                top: 53px;
-                left: 0;
-                right: 0;
-                z-index: 1000;
-                background: rgb(50, 50, 50);
-                flex-direction: column;
-                padding-top: 0;
-            }
-
-            .menu li {
-                border-bottom: 1px solid rgb(68, 68, 68);
-                margin: 0 0 0 -2.5rem;
-            }
-
-            .menu li a {
-                transition: all 0.3s;
-                display: block;
-                padding: 0.6em;
-                width: 100%;
-            }
-
-            .menu li a:hover {
-                background: rgb(112, 112, 112);
-                color: #fff;
-                width: 100%;
-            }
-
-            .nav_2 .showmenu {
-                display: block;
-                margin-top: 1.5rem;
-                margin-right: 0.5rem;
-            }
-
-            /*jQ點擊後動態在 body 加上 class */
-            .menu-show .menu {
-                /* display: block; */
-                max-height: 300px
-            }
-
-            /* 分隔 */
-
-            .nav_2 .set_ul {
-                display: none;
-
-            }
-
             .banner_icon {
                 width: 100%;
                 background: #000;
@@ -873,7 +813,7 @@
             }
            
             .image_1 img {
-                width: 260px;
+                width: 255px;
                 margin: 1.5rem 0 2rem 0;
             }
             .image_1 p {
@@ -1101,6 +1041,55 @@
                 justify-content: center;
                 flex-wrap: wrap;
             } */
+            .about {
+                width: 100%;
+                min-height: 500px;
+                flex-direction: column;
+                justify-content: flex-end;
+                background: url(../images/long-hair.jpg) 50% 25% no-repeat;
+                background-size: cover;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+            }
+    
+            .about::after {
+                content: "";
+                width: 100%;
+                min-height: 500px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: inherit;
+                filter: blur(7px);
+                z-index: 2;
+            }
+            .table_1 {
+                display: none;
+            }
+            .table_2 {
+                display: block;
+                z-index: 10;
+                color: #fff;
+                text-align: center;
+            }
+            /* .table_1 td {
+                padding: 0 65px;
+            } */
+            
+            .table_2 .td_1 {
+                font-family: "微軟正黑體", Arial, Helvetica;
+            }
+    
+            .table_2 .number {
+                font-size: 56pt;
+                padding-bottom: 5px;
+                font-family: 'Old Standard TT', serif;
+            }
+            .about_btn {
+                flex-direction: column;
+                align-items: center;
+            }
             
             .home {
                 justify-content: center;

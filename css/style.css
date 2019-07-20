@@ -645,6 +645,7 @@
         .home {
             justify-content: center;
             height: 150px;
+            /* flex-wrap: wrap; */
         }
 
         .home_p img {
@@ -772,6 +773,69 @@
             .wrap {
                 width: 100%;
             }
+            
+            /* 分隔 */
+            .nav_1 .menu_0 {
+                display: none;
+            }
+
+            .nav_2 .menu_1 {
+                display: block;
+            }
+
+            .nav_2 .menu {
+                /*隱藏選單開始*/
+                max-height: 0;
+                overflow: hidden;
+                /*隱藏選單結束*/
+                transition: max-height 0.5s;
+                position: absolute;
+                top: 53px;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+                background: rgb(50, 50, 50);
+                flex-direction: column;
+                padding-top: 0;
+            }
+
+            .menu li {
+                border-bottom: 1px solid rgb(68, 68, 68);
+                margin: 0 0 0 -2.5rem;
+            }
+
+            .menu li a {
+                transition: all 0.3s;
+                display: block;
+                padding: 0.6em;
+                width: 100%;
+            }
+
+            .menu li a:hover {
+                background: rgb(112, 112, 112);
+                color: #fff;
+                width: 100%;
+            }
+
+            .nav_2 .showmenu {
+                display: block;
+                margin-top: 1.5rem;
+                margin-right: 0.5rem;
+            }
+
+            /*jQ點擊後動態在 body 加上 class */
+            .menu-show .menu {
+                /* display: block; */
+                max-height: 300px
+            }
+
+            /* 分隔 */
+
+            .nav_2 .set_ul {
+                display: none;
+
+            }
+
             .banner_icon {
                 width: 100%;
                 background: #000;
@@ -858,6 +922,37 @@
                 justify-content: center;
                 flex-wrap: wrap;
             } */
+            
+            .home {
+                justify-content: center;
+                /* flex-wrap: wrap; */
+                flex-direction: column;
+                align-items: center;
+                min-height: 180px;
+            }
+            
+            .home_p p {
+                width: 420px;
+                margin-top: 0;
+                
+            }
+           .home_p img {
+                height: 32px;
+                margin: 0.2rem 0.5rem 0 1rem;
+            }
+            .home_icon .icon_ul {
+                margin-top: 0;
+            }
+            .home_join {
+                margin: 2rem 0 0 2.2rem;
+            }
+            
+        }
+        @media only screen and (max-width: 750px) {
+            .wrap {
+                width: 100%;
+            }
+
             /* 分隔 */
             .nav_1 .menu_0 {
                 display: none;
@@ -914,15 +1009,12 @@
             }
 
             /* 分隔 */
+
             .nav_2 .set_ul {
                 display: none;
 
             }
-        }
-        @media only screen and (max-width: 750px) {
-            .wrap {
-                width: 100%;
-            }
+
             .banner_icon {
                 width: 100%;
                 background: #000;
@@ -1009,64 +1101,28 @@
                 justify-content: center;
                 flex-wrap: wrap;
             } */
-            /* 分隔 */
-            .nav_1 .menu_0 {
-                display: none;
-            }
-
-            .nav_2 .menu_1 {
-                display: block;
-            }
-
-            .nav_2 .menu {
-                /*隱藏選單開始*/
-                max-height: 0;
-                overflow: hidden;
-                /*隱藏選單結束*/
-                transition: max-height 0.5s;
-                position: absolute;
-                top: 53px;
-                left: 0;
-                right: 0;
-                z-index: 1000;
-                background: rgb(50, 50, 50);
+            
+            .home {
+                justify-content: center;
+                /* flex-wrap: wrap; */
                 flex-direction: column;
-                padding-top: 0;
+                align-items: center;
+                min-height: 180px;
             }
-
-            .menu li {
-                border-bottom: 1px solid rgb(68, 68, 68);
-                margin: 0 0 0 -2.5rem;
+            
+            .home_p p {
+                width: 420px;
+                margin-top: 0;
+                
             }
-
-            .menu li a {
-                transition: all 0.3s;
-                display: block;
-                padding: 0.6em;
-                width: 100%;
+           .home_p img {
+                height: 32px;
+                margin: 0.2rem 0.5rem 0 1rem;
             }
-
-            .menu li a:hover {
-                background: rgb(112, 112, 112);
-                color: #fff;
-                width: 100%;
+            .home_icon .icon_ul {
+                margin-top: 0;
             }
-
-            .nav_2 .showmenu {
-                display: block;
-                margin-top: 1.5rem;
-                margin-right: 0.5rem;
-            }
-
-            /*jQ點擊後動態在 body 加上 class */
-            .menu-show .menu {
-                /* display: block; */
-                max-height: 300px
-            }
-
-            /* 分隔 */
-            .nav_2 .set_ul {
-                display: none;
-
+            .home_join {
+                margin: 2rem 0 0 2.2rem;
             }
         }

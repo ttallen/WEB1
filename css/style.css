@@ -783,7 +783,7 @@
             }
             
         }
-        @media only screen and (max-width: 990px)and (min-width: 750px) {
+        @media only screen and (max-width: 990px) and (min-width: 750px) {
             .wrap {
                 width: 100%;
             }
@@ -900,7 +900,8 @@
             }
             
         }
-        @media only screen and (max-width: 750px) {
+        
+         @media only screen and (max-width: 750px) and (min-width: 520px) {
             .wrap {
                 width: 100%;
             }
@@ -938,7 +939,7 @@
             .menu li a {
                 transition: all 0.3s;
                 display: block;
-                padding: 0.6em;
+                padding: 1em;
                 width: 100%;
             }
 
@@ -957,7 +958,7 @@
             /*jQ點擊後動態在 body 加上 class */
             .menu-show .menu {
                 /* display: block; */
-                max-height: 300px
+                max-height: 320px
             }
 
             /* 分隔 */
@@ -1166,5 +1167,18 @@
             }
             .home_join {
                 margin: 2rem 0 0 2.2rem;
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            .menu li a {
+                transition: all 0.3s;
+                display: block;
+                padding: 1.3em;
+                width: 100%;
+                font-size: 1.2rem;
+            }
+            .menu-show .menu {
+                /* display: block; */
+                max-height: 388px
             }
         }

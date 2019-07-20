@@ -92,6 +92,7 @@
             height: 520px;
             width: 100%;
             justify-content: center;
+            align-items: center;
         }
 
         .slider {
@@ -108,13 +109,10 @@
         .title {
             display: flex;
             flex-direction: column;
-
             position: absolute;
-            /* left: 21%; */
             opacity: 1;
             z-index: 999;
             text-align: center;
-            padding: 90px;
             font-family: "微軟正黑體", Arial, Helvetica;
         }
 
@@ -122,10 +120,16 @@
             height: 180px;
         }
 
-        .title h1 {
+        .title .title_h1 {
             font-size: 3.1rem;
             margin: 2px 0 -15px 0;
             color: #fff;
+        }
+        .title .title_h2{
+            font-size: 3.1rem;
+            margin: 2px 0 -15px 0;
+            color: #fff;
+            display: none;
         }
 
         .title p {
@@ -176,8 +180,7 @@
         #city .city1 {
             display: none;
         }
-
-
+        
         .input_1 #search {
             width: 520px;
             height: 50px;
@@ -954,6 +957,30 @@
                 display: none;
 
             }
+            /* .title {
+                padding: -90px;
+            } */
+            .title .title_h1 {
+                display: none;
+            }
+            .title .title_h2{
+                display: block;
+            }
+            .input_1 .icon_1 {
+                margin-left: 50px;
+            }
+            .input_1 #search {
+                width: 430px;
+                float: none;
+            }
+            .icon_2 a {
+                position: absolute;
+                top: 98%;
+                left: 8.8%;
+                width: 267px;
+                padding-left: 9.9rem;
+            }
+
 
             .banner_icon {
                 width: 100%;
@@ -990,6 +1017,10 @@
                 padding: 1rem 0.4rem;
                 margin: 0 0.5rem;
             }
+            .image_1 img {
+                width: 215px;
+                margin: 1.5rem 0 2rem 0;
+            }
 
             .image_1 p {
                 position: absolute;
@@ -999,7 +1030,7 @@
 
             .image_1 a {
                 position: absolute;
-                top: 96%;
+                top: 88%;
                 left: 70%;
             }
            

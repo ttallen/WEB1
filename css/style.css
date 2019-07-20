@@ -27,7 +27,6 @@
         .nav_1 ul {
             padding-top: 5px;
             margin-left: -10px;
-
         }
 
         .nav_2 .showmenu {
@@ -141,7 +140,7 @@
         .input_1 {
             width: 520px;
             vertical-align: middle;
-            /* 用來定義行內元素對其方式 */
+            /* 用來定義行內元素對齊方式 */
             white-space: nowrap;
             /* 不換行 */
             position: relative;
@@ -199,12 +198,10 @@
         }
 
         .input_1 #search:-moz-placeholder {
-            /* Firefox 18- */
             color: #e7abbb;
         }
 
         .input_1 #search::-moz-placeholder {
-            /* Firefox 19+ */
             color: #e7abbb;
         }
 
@@ -281,15 +278,10 @@
 
         .content {
             width: 100%;
-           /*  margin-top: 2rem;*/
             flex-direction: column; 
             align-items: center;
             /* position: relative; */
         }
-
-        /* .content .hot {
-            position: relative;
-        } */
 
         .content h2 {
             text-align: center;
@@ -314,9 +306,6 @@
         }
         
         .content .image_1 {
-            /* width: 22%;
-            margin: 0 2rem;
-            display: flex; */
             position: relative;
             margin: 0 3rem;
         }
@@ -324,7 +313,6 @@
         .image_1 img {
             width: 210px;
             transition: .6s;
-            /* height: 300px;*/
             object-fit:cover; 
         }
 
@@ -564,9 +552,6 @@
         }
 
         .about_btn {
-            /* position: absolute;
-            left: 24%;
-            top: 60%; */
             z-index: 10;
             
         }
@@ -574,9 +559,6 @@
             flex-direction: column;
         }
         .about_btn .bottom4 {
-            /* position: absolute;
-            left: 20%;
-            top: 74.5%; */
             border-top: 3px solid #fff;
             width: 35px;
             margin: -1.7rem 0 0 7.3rem;
@@ -659,7 +641,6 @@
         .home {
             justify-content: center;
             height: 150px;
-            /* flex-wrap: wrap; */
         }
 
         .home_p img {
@@ -716,21 +697,6 @@
             top: -10px;
             left: -46px;
         }
-
-        /* .home_join .join_a2 {
-            position: absolute;
-            top: -10px;
-            left: -46px;
-            text-decoration: none;
-            color: #747070;
-            font-family: "微軟正黑體", Arial, Helvetica;
-            font-size: 11pt;
-        }
-        .home_join .btn_join_h {
-            position: absolute;
-            top: -10px;
-            left: -46px;
-        } */
 
         .inc {
             padding: 0.3rem 0;
@@ -869,11 +835,6 @@
                 top: 99%;
                 left: 88%;
             }
-            /* .content_image {
-                width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-            } */
             
             .home {
                 justify-content: center;
@@ -901,7 +862,7 @@
             
         }
         
-         @media only screen and (max-width: 750px) and (min-width: 520px) {
+         @media only screen and (max-width: 750px) and (min-width: 576px) {
             .wrap {
                 width: 100%;
             }
@@ -957,7 +918,6 @@
 
             /*jQ點擊後動態在 body 加上 class */
             .menu-show .menu {
-                /* display: block; */
                 max-height: 320px
             }
 
@@ -967,9 +927,7 @@
                 display: none;
 
             }
-            /* .title {
-                padding: -90px;
-            } */
+            
             .title .title_h1 {
                 display: none;
             }
@@ -1124,9 +1082,6 @@
                 color: #fff;
                 text-align: center;
             }
-            /* .table_1 td {
-                padding: 0 65px;
-            } */
             
             .table_2 .td_1 {
                 font-family: "微軟正黑體", Arial, Helvetica;
@@ -1147,7 +1102,6 @@
             
             .home {
                 justify-content: center;
-                /* flex-wrap: wrap; */
                 flex-direction: column;
                 align-items: center;
                 min-height: 180px;
@@ -1178,7 +1132,6 @@
                 font-size: 1.2rem;
             }
             .menu-show .menu {
-                /* display: block; */
                 max-height: 388px
             }
         }

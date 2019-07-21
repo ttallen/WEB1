@@ -88,7 +88,7 @@
         .banner {
             position: relative;
             background: #000;
-            height: 520px;
+            height: 525px;
             width: 100%;
             justify-content: center;
             align-items: center;
@@ -98,7 +98,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 520px;
+            height: 525px;
             width: 100%;
             background: url(../images/slider01.jpg) 50% 46% no-repeat;
             object-fit: cover;
@@ -106,8 +106,10 @@
         }
 
         .title {
+            width: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
             position: absolute;
             opacity: 1;
             z-index: 999;
@@ -518,7 +520,7 @@
 
         .about {
             width: 100%;
-            height: 240px;
+            height: 255px;
             flex-direction: column;
             align-items: center;
             background: url(../images/long-hair.jpg) 50% 25% no-repeat;
@@ -531,7 +533,7 @@
         .about::after {
             content: "";
             width: 100%;
-            height: 240px;
+            height: 255px;
             position: absolute;
             left: 0;
             top: 0;
@@ -546,6 +548,7 @@
             top: 5%; */
             z-index: 10;
             color: #fff;
+            margin-top: 0.5rem;
         }
         .table_2 {
             display: none;
@@ -925,7 +928,6 @@
 
             .nav_2 .set_ul {
                 display: none;
-
             }
             
             .title .title_h1 {
@@ -934,9 +936,13 @@
             .title .title_h2{
                 display: block;
             }
-            .input_1 .icon_1 {
-                margin-left: 50px;
+            .input_1 {
+                width: 430px;
             }
+            .input_1 .icon_1 {
+                margin-left: 10px;
+            }
+            
             .input_1 #search {
                 width: 430px;
                 float: none;
@@ -944,11 +950,10 @@
             .icon_2 a {
                 position: absolute;
                 top: 98%;
-                left: 8.8%;
+                left: 0.7%;
                 width: 267px;
                 padding-left: 9.9rem;
             }
-
 
             .banner_icon {
                 width: 100%;
@@ -1124,6 +1129,39 @@
             }
         }
         @media only screen and (max-width: 576px) {
+            .wrap {
+                width: 100%;
+            }
+
+            /* 分隔 */
+            .nav_1 .menu_0 {
+                display: none;
+            }
+
+            .nav_2 .menu_1 {
+                display: block;
+            }
+
+            .nav_2 .menu {
+                /*隱藏選單開始*/
+                max-height: 0;
+                overflow: hidden;
+                /*隱藏選單結束*/
+                transition: max-height 0.5s;
+                position: absolute;
+                top: 53px;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+                background: rgb(50, 50, 50);
+                flex-direction: column;
+                padding-top: 0;
+            }
+
+            .menu li {
+                border-bottom: 1px solid rgb(68, 68, 68);
+                margin: 0 0 0 -2.5rem;
+            }
             .menu li a {
                 transition: all 0.3s;
                 display: block;
@@ -1131,7 +1169,242 @@
                 width: 100%;
                 font-size: 1.2rem;
             }
+
+            .menu li a:hover {
+                background: rgb(112, 112, 112);
+                color: #fff;
+                width: 100%;
+            }
+
+            .nav_2 .showmenu {
+                display: block;
+                margin-top: 1.5rem;
+                margin-right: 0.5rem;
+            }
+
+            /*jQ點擊後動態在 body 加上 class */
+            
             .menu-show .menu {
                 max-height: 388px
+            } 
+            /* 分隔 */
+
+            .nav_2 .set_ul {
+                display: none;
+            }
+            
+            .title .title_h1 {
+                display: none;
+            }
+            .title .title_h2{
+                display: block;
+            }
+            .input_1 {
+                width: 430px;
+            }
+            .input_1 .icon_1 {
+                margin-left: 10px;
+            }
+            
+            .input_1 #search {
+                width: 430px;
+                float: none;
+            }
+            .icon_2 a {
+                position: absolute;
+                top: 98%;
+                left: 0.7%;
+                width: 267px;
+                padding-left: 9.9rem;
+            }
+
+            .banner_icon {
+                width: 100%;
+                background: #000;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+    
+            .icon_a {
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .icon_b {
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .icon_c {
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .content_image {
+                 flex-wrap: wrap;
+            }
+            
+            .content .image_1 {
+                padding: 1rem 0.4rem;
+                margin: 0 0.5rem;
+            }
+            .image_1 img {
+                width: 180px;
+                margin: 1.5rem 0 2rem 0;
+            }
+
+            .image_1 p {
+                position: absolute;
+                top: 65%;
+                left: 36%;
+            }
+
+            .image_1 a {
+                position: absolute;
+                top: 86%;
+                left: 65%;
+            }
+           
+            .image_1 img:hover {
+                opacity: 1;
+            }
+            .category_photo {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+            .category .photo_1 {
+                padding: 1.5rem 0;
+                background-color: #fff;
+                min-height: 300px;
+            }
+            .photo_1:hover .photo {
+                opacity: 1;
+            }
+
+            .photo_1 img {
+                width: 370px;
+            }
+            
+            .photo_1 p {
+                position: absolute;
+                top: 23%;
+                left: 3%;
+                text-shadow: 2px 3px 3px #000;
+                padding: 3.5rem 3rem;
+            }
+            .category a {
+                position: absolute;
+                top: 89%;
+                left: 84%;
+            }
+        
+            .app .app_h2 {
+                margin-bottom: 0;
+            }
+            .app ul {
+                margin: 0;
+                flex-direction: column;
+            }
+            .app .ios {
+                margin: 0 0 -2.5rem 0;
+            }
+
+            .app p {
+                display: none;
+            }
+            .about {
+                width: 100%;
+                min-height: 500px;
+                flex-direction: column;
+                justify-content: flex-end;
+                background: url(../images/long-hair.jpg) 50% 25% no-repeat;
+                background-size: cover;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+            }
+    
+            .about::after {
+                content: "";
+                width: 100%;
+                min-height: 500px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: inherit;
+                filter: blur(7px);
+                z-index: 2;
+            }
+            .table_1 {
+                display: none;
+            }
+            .table_2 {
+                display: block;
+                z-index: 10;
+                color: #fff;
+                text-align: center;
+            }
+            
+            .table_2 .td_1 {
+                font-family: "微軟正黑體", Arial, Helvetica;
+            }
+    
+            .table_2 .number {
+                font-size: 56pt;
+                padding-bottom: 5px;
+                font-family: 'Old Standard TT', serif;
+            }
+            .about_btn {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about_btn ul {
+                margin-left: -38px;
+            }
+            
+            .home {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                min-height: 180px;
+            }
+            
+            .home_p p {
+                width: 370px;
+                margin-top: 0;
+                font-size: 9pt;
+            }
+           .home_p img {
+                height: 26px;
+                margin: 0.2rem 0.5rem 0 1rem;
+            }
+            .home_icon img {
+                height: 20px;
+                margin: 0.8rem 0.3rem -0.25rem 0;
+            }
+            .home_icon a {
+                font-size: 9pt;
+            }
+            .home_icon .icon_ul {
+                margin-top: 0;
+            }
+            .home_join {
+                margin: 2rem 0 0 2.2rem;
+            }
+            .home_join .join_a1 {
+                font-size: 9pt;
+            }
+            .home_join .btn_join {
+                width: 120px;
+                top: -8px;
+            }
+            .inc p {
+                font-size: 9pt;
             }
         }
